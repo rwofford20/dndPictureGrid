@@ -29,6 +29,8 @@ const DragItem = memo(({ id, onMoveItem, children }) => {
     const opacity = isDragging ? 0.5 : 1;
     const containerStyle = { opacity };
 
+    console.log('Inside DragItem: id=' + id);
+
     return React.Children.map(children, child =>
         React.cloneElement(child, {
             forwardedRef: ref,

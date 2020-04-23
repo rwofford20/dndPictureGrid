@@ -1,5 +1,5 @@
 import React, { Component, createContext } from 'react';
-import sampleItems from './sampleItems';
+import sampleItems from '../../sampleItems.jsx';
 
 function move(array, oldIndex, newIndex) {
     if (newIndex >= array.length) {
